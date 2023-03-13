@@ -1,0 +1,32 @@
+.summary {
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  border-radius: 18px;
+  margin-bottom: 20px;
+
+  .checkoutBtn {
+    padding: 3px 10px;
+    border-radius: 30px;
+    background-color: rgba(255, 92, 34, .8);
+    color: #fff;
+    font-size: 1.1rem;
+    transition: transform .2s;
+
+    &:hover {
+      background-color: rgba(255, 92, 34, 1);
+    }
+
+    &:active {
+      transform: scale(.98) translateY(2px);
+    }
+
+    &:disabled {
+      background-color: #0000000f;
+      color: rgba(155, 155, 155, 0.37);
+      border: 1px solid #dce4e5;
+    }
+  }
+}

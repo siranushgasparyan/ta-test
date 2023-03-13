@@ -1,0 +1,28 @@
+html {
+  font-family: 'Outfit', sans-serif;
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(8, 64, 71, 0.14);
+
+    button {
+      font-family: "Outfit", sans-serif;
+      cursor: pointer;
+      border: none;
+
+    }
+
+    input {
+      font-family: "Outfit", sans-serif;
+      text-align: center;
+    }
+    @media only screen  and (min-width: 1500px) {
+      font-size: 1.4em;
+      button,
+      input {
+        font-size: .9em;
+      }
+    }
+  }
+}

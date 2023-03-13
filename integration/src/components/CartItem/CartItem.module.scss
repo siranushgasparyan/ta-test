@@ -1,0 +1,95 @@
+%quantityChangerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  transition: transform .1s;
+
+  &:active {
+    opacity: .6;
+    transform: scale(.8);
+
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0 0 5px 1px rgba(95, 158, 160, 0.5);
+    -moz-box-shadow: 0 0 5px 1px rgba(95, 158, 160, 0.5);
+    box-shadow: 0 0 5px 1px rgba(95, 158, 160, 0.5);
+
+    &:disabled {
+      box-shadow: none;
+    }
+  }
+
+}
+
+.CartItemCard {
+  margin: 10px auto;
+  width: 40vw;
+  align-items: center;
+  display: flex;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #fff;
+
+  &:hover {
+    -webkit-box-shadow: 0 0 5px 1px rgba(95, 158, 160, 0.8);
+    -moz-box-shadow: 0 0 5px 1px rgba(95, 158, 160, 0.8);
+    box-shadow: 0 0 5px 1px rgba(95, 158, 160, 0.8);
+  }
+
+  img {
+    width: 110px;
+    padding: 10px;
+  }
+
+  .description {
+    margin: 0 auto 10px 20px;
+    overflow: hidden;
+
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .removeBtn {
+      padding: 3px 10px;
+      border-radius: 30px;
+
+      &:hover {
+        background-color: cadetblue;
+        color: aliceblue;
+      }
+
+    }
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+
+    p {
+      min-width: 20px;
+      text-align: center;
+    }
+
+    .incrementBtn {
+      @extend %quantityChangerBtn;
+    }
+
+    .decrementBtn {
+      @extend %quantityChangerBtn;
+      padding-bottom: 4px;
+    }
+  }
+  @media only screen  and (min-width: 1500px) {
+    img {
+      width: 170px;
+    }
+  }
+}
