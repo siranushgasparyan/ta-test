@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "target": "es2015",
+        "allowJs": false,
+        "jsx": "react",
+        "baseUrl": ".",
+        "skipLibCheck": true,
+        "lib": ["ESNext", "DOM"],
+        "paths": {
+            "@Core/*": ["./modules/core/*"],
+            "@Mocks/*": ["./modules/mock/*"],
+            "@Utils/*": ["./modules/utils/*"],
+            "@WizardGenerator/*": ["./modules/mock/api/wizard/generator/*"],
+            "@Components/*": ["./modules/components/*"],
+            "@Constants/*": ["./modules/constants/*"],
+
+            "frontend/*": ["../src/*"],
+
+            "components/*": ["../src/components/*"],
+            "hooks/*": ["../src/hooks/*"],
+            "pages/*": ["../src/pages/*"],
+            "store/*": ["../src/store/*"]
+        }
+    },
+    "include": ["./modules", "./tests", "./types", "../typeScript", "jest-setup.ts"],
+    "exclude": ["../typeScript/modules.d.ts", "../src"]
+}

@@ -1,0 +1,3 @@
+{
+  "eslint.workingDirectories": ["./integration", "./integration/__specs__"]
+}
