@@ -8,8 +8,8 @@
  - Remove all items from cart 
  ![Remove all items](/images/integration/step3.png)
 
- - Check all remove events
-	![Add Cart Item Click](/images/integration/eventRemoveAll.png)
+ - Check all 'Remove' events
+	![Remove events](/images/integration/eventRemoveAll.png)
 
  - Check for empty cart label, zero price & disabled "Proceed to Checkout" button
  ![Empty cart checks](/images/integration/step4.png)
